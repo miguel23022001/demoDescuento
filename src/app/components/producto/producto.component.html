@@ -1,0 +1,12 @@
+<div class="producto">
+  <div class="descuento-box" *ngIf="producto.descuento">
+    {{ calcularPorcentajeDescuento(producto.precio, producto.descuento) }}
+  </div>
+
+  <h2>{{ producto.name }}</h2>
+  <img [src]="producto.image" width="200px" height="200px">
+  <p [ngStyle]="{'text-decoration': producto.descuento ? 'line-through' : 'none'}">
+    Precio: {{ producto.precio }}
+  </p>
+  <p *ngIf="producto.descuento">Descuento: {{ producto.descuento }}</p>
+</div>

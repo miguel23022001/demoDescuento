@@ -1,0 +1,13 @@
+.producto {
+  position: relative; /* Para posicionar el cuadro con respecto al producto */
+}
+
+.descuento-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
