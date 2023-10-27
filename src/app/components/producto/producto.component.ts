@@ -17,4 +17,11 @@ export class ProductoComponent {
     const porcentaje = ((precio - descuento) / precio) * 100;
     return `-${porcentaje.toFixed(2)}%`;
   }
+
+  // Función para comprar el producto
+  comprarProducto() {
+    // Agrega aquí la lógica para comprar el producto
+    // Por ejemplo, puedes redirigir a una página de compra o realizar una acción específica.
+    console.log('Producto comprado:', this.producto.name);
+  }
 }

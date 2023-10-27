@@ -9,4 +9,7 @@
     Precio: {{ producto.precio }}
   </p>
   <p *ngIf="producto.descuento">Descuento: {{ producto.descuento }}</p>
+
+  <!-- Agrega el botón "Comprar" -->
+  <button (click)="comprarProducto()">Comprar</button>
 </div>
